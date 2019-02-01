@@ -56,6 +56,14 @@ In `config/config-webp.php` config file you should set `cwebp` global path.
     	'default_quality' => 70,
     ];
 ```
+```
+    // for Linux Systems paths to look for cwebp binary
+        /usr/bin/cwebp
+        /usr/local/bin/cwebp
+        /usr/gnu/bin/cwebp
+        /usr/syno/bin/cwebp
+    
+```
 
 ## Usage
 
