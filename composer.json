@@ -1,0 +1,60 @@
+{
+    "name": "Siberfx/SiberfxWebp",
+    "type": "library",
+    "description": "Laravel 5 package for WebP image convert",
+    "keywords": [
+        "Siberfx",
+        "SiberfxWebp",
+        "Webp",
+        "Laravel"
+    ],
+    "homepage": "https://github.com/siberfx/SiberfxWebp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Selim GÖRMÜŞ",
+            "email": "info@siberfx.com",
+            "homepage": "https://siberfx.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.6|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=5.4.3",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Siberfx\\SiberfxWebp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Siberfx\\SiberfxWebp\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "master": "1.0.0"
+        },
+        "laravel": {
+            "providers": [
+                "Siberfx\\SiberfxWebp\\SiberfxWebpServiceProvider"
+            ],
+            "aliases": {
+                "SiberfxWebpConvert": "Siberfx\\SiberfxWebp\\SiberfxWebp"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
